@@ -9,4 +9,5 @@ class AppFont {
   static final sm = 12.0;
   static final md = 18.0;
   static final lg = 28.0;
+  static final xl = 35.0;
 }
