@@ -30,10 +30,8 @@ class _MemberDetailState extends State<MemberDetail> {
       - MediaQuery.of(context).size.width; // screenwidth
 
     if (_memberImageOffset > 0) {
-      _scrollController.animateTo(
+      _scrollController.jumpTo(
         _memberImageOffset,
-        curve: Curves.easeOut,
-        duration: const Duration(milliseconds: 100),
       );
     }
   }
@@ -127,12 +125,13 @@ class _MemberDetailState extends State<MemberDetail> {
                     height: AppSpace.lg + 75,
                     child: ListView.separated(
                       controller: _scrollController,
+                      physics: BouncingScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       padding: EdgeInsets.only(
                           left: AppSpace.xl, right: AppSpace.md),
                       itemCount: members.length,
                       itemBuilder: (BuildContext context, int index) {
-                        var active = index == _currentIndex;
+                        bool active = (index == _currentIndex);
                         return InkWell(
                           onTap: () {
                             setState(() {

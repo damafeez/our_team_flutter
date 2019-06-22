@@ -35,6 +35,7 @@ class OurTeam extends StatelessWidget {
           color: background,
           child: SafeArea(
             child: ListView.separated(
+              physics: BouncingScrollPhysics(),
               padding: EdgeInsets.only(
                 top: AppSpace.md,
                 bottom: AppSpace.md,

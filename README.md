@@ -1,16 +1,9 @@
 # our_team
 
-A new Flutter project.
+Just a simple test app on Flutter
 
-## Getting Started
+# Design (Dribbble)
+[Dribbble](https://dribbble.com/shots/5788331-Our-Team-Mobile-Version)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+# Preview
+![our_team](https://user-images.githubusercontent.com/26779819/59963685-7fdfa000-94ee-11e9-9fab-eb578b091fc1.gif)
